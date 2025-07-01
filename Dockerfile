@@ -1,7 +1,2 @@
- Use Apache HTTP Server
-FROM httpd:latest 
-
-RUN sudo install httpd -y
-
-
-COPY Music.html /var/www/html/index.html
+ FROM httpd:latest
+COPY index.html /usr/local/apache2/htdocs/
