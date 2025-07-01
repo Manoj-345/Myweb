@@ -1,1 +1,235 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SoundVibe - Feel the Music</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #4686ec; /* Navy Blue Background */
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #4686ec;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a:hover {
+      color: #f39c12;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #030303, #000000);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: #4686ec;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #22e6c9;
+    }
+
+    /* Featured Section */
+    .featured {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .song-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .song-card {
+      background: #000000;
+      border-radius: 10px;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .song-card:hover {
+      transform: scale(1.05);
+    }
+
+    .song-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Player UI */
+    .player-ui {
+      background: #000000;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .player {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .song-info {
+      flex: 1;
+    }
+
+    .progress-bar {
+      background: #000000;
+      height: 6px;
+      border-radius: 3px;
+      margin-top: 0.5rem;
+      position: relative;
+    }
+
+    .progress {
+      width: 60%;
+      height: 100%;
+      background: #2684e1;
+      border-radius: 3px;
+    }
+
+    .controls button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .controls button:hover {
+      color: #f39c12;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a1a33;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🎧 SoundVibe</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Albums</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Feel the Rhythm of Life</h1>
+      <p>Stream your favorite tracks anytime, anywhere.</p>
+      <a href="#" class="btn">Explore Music</a>
+    </div>
+  </header>
+
+  <section class="featured">
+    <h2>🔥 Trending Now</h2>
+    <div class="song-grid">
+      <div class="song-card">
+        <img src="en ka.jpeg/300x300" alt="Album Art" />
+        <h3>En kadhale</h3>
+        <p>SPB</p>
+      </div>
+      <div class="song-card">
+        <img src="kadhal rojave.jpeg/300x300" alt="Album Art" />
+        <h3>Kadhal Rojave</h3>
+        <p>SPB</p>
+      </div>
+      <div class="song-card">
+        <img src="mun.jpeg/300x300" alt="Album Art" />
+        <h3>Munpaniya</h3>
+        <p>SPB</p>
+      </div>
+      <div class="song-card">
+        <img src="idho.jpeg/300x300" alt="Album Art" />
+        <h3>idho idho</h3>
+        <p>SPB</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="player-ui">
+    <h2>Now Playing</h2>
+    <div class="player">
+      <img src="https://via.placeholder.com/100x100" alt="Album Cover" />
+      <div class="song-info">
+        <h4>Levitating</h4>
+        <p>Dua Lipa</p>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <div class="controls">
+        <button>⏮️</button>
+        <button>⏯️</button>
+        <button>⏭️</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SoundVibe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
