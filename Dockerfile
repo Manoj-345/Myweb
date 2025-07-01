@@ -1,5 +1,5 @@
  Use Apache HTTP Server
-FROM httpd:alpine
+FROM httpd:latest
 
 
 COPY Music.html /usr/local/apache2/htdocs/Index.html
